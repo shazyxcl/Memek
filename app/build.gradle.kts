@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.kotlinxSerialization)
+    kotlin("kapt") version libs.versions.kotlin.get()  // Tambahkan ini
 }
 
 android {
