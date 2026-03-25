@@ -1,6 +1,6 @@
 [versions]
 agp = "8.5.2"
-kotlin = "1.9.0"
+kotlin = "2.0.21"  # Update dari 1.9.0 ke 2.0.21
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -10,7 +10,7 @@ lifecycleRuntimeCompose = "2.8.7"
 lifecycleViewmodelCompose = "2.8.7"
 activityCompose = "1.9.1"
 composeBom = "2025.06.01"
-composeCompiler = "1.5.1"
+composeCompiler = "1.5.15"  # Update untuk kompatibilitas dengan Kotlin 2.0
 coroutines = "1.9.0"
 retrofit = "2.11.0"
 okhttp = "4.12.0"
@@ -18,6 +18,7 @@ media3 = "1.5.1"
 room = "2.7.0"
 ktor = "2.3.12"
 kamelImage = "0.9.3"
+ksp = "2.0.21-1.0.28"  # Tambahkan KSP
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -73,3 +74,4 @@ kamel-image = { module = "media.kamel:kamel-image", version.ref = "kamelImage" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }  # Tambahkan KSP plugin
